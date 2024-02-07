@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>example</title>
+</head>
+<body>
+<div id="output"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="./app.js"></script>
+<script>
+ // Your JavaScript code using Handlebars and the arrayify helper
+ const source = "<p>{{moment}}</p>";
+ // Compile the template
+ const template = Handlebars.compile(source);
+ // Render the template with the data
+ const resultHTML = template();
+ // Display the result
+ document.getElementById('output').innerHTML = resultHTML;
+</script>
+</script>
+</body>
+</html>
